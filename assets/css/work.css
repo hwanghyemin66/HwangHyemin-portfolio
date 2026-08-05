@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard';
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.inner {
+  width: 1320px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1 {
+  color: var(--text);
+}
+
+h3 {
+  color: var(--text);
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999999;
+  width: 500px;
+}
+
+p{
+  color: #999;
+}
+
+.inner img {
+  border: 1px solid #999999;
+}
+
+h2 {
+  background: #81B3E7;
+  color: #fff;
+  display: inline-block;
+
+  border-radius: 99px;
+  padding: 1px 20px;
+
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+}
+
+.banner_margin img {
+  margin-bottom: 30px;
+}
+
+.wrap2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap2 img {
+  width: calc(25% - 15px);
+  height: auto;
+}
+
+
+@media (max-width:1024px){
+  .wrap{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrap2{
+    flex-direction: column;
+  }
+
+  .wrap2 img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+/*배너 페이지*/
+.banner3_page{
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner3_p{
+  margin-bottom: 50px;
+}
+
+.banner3_page img{
+  width: calc(20% - 55px);
+}
+
+/*버튼*/
+.sub_fix_btn img{
+  border-style: none;
+}

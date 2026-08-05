@@ -5,16 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--rubik폰트-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap"
+    rel="stylesheet">
+
+  <!--css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
-
 </head>
 
 <body>
   <header class="site-header" id="siteHeader">
     <nav class="nav">
-      <a href="#hero" class="brand">Name</a>
+      <a href="#hero" class="brand"><img src="./assets/img/Sprout.png" alt="">Hwang Hyemin</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#branding">Brand</a>
@@ -27,13 +35,9 @@
   <main>
     <section class="hero" id="hero">
       <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-        <source src="assets/video/main-demo.mp4" type="video/mp4" />
+        <source src="./assets/video/main-banner.mp4" type="video/mp4" />
       </video>
-      <div class="hero-inner">
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#branding">View Work</a>
-          <a class="btn btn-secondary" href="#about">About Me</a>
-        </div>
+
       </div>
 
       <div class="scroll-indicator">Scroll</div>
@@ -44,7 +48,7 @@
         <div class="section-head reveal reveal-scale">
           <div>
             <!-- <span class="eyebrow">이력과 기능을 함께 보여주는 소개 섹션</span> -->
-            <h2>About</h2>
+            <h2 style="font-family: 'YeogiOttaeJalnan';">About</h2>
           </div>
           <!-- <p>
             단순한 자기소개가 아니라, 경력·작업 방향·도구 역량을 동시에 보여줄 수 있도록 설계한 영역입니다.
@@ -53,55 +57,47 @@
 
         <div class="about-grid">
           <article class="card profile-card reveal reveal-left">
-            <div class="profile-media" style="background:
-                radial-gradient(circle at 30% 20%, rgba(50,199,161,0.18), transparent 22%),
-                radial-gradient(circle at 70% 30%, rgba(123,140,255,0.18), transparent 24%),
-                linear-gradient(145deg, #ffffff 0%, #edf3fa 100%);
+            <div class="profile-media" style="background-color: #ffffff;
                 position: relative; overflow: hidden;">
-              <div style="position:absolute; inset:18px; border:1px solid rgba(17,24,39,0.06); border-radius:22px;">
+              <div style="position:absolute; inset:18px;">
                 <video class="thumb-video" autoplay loop muted playsinline preload="metadata">
-                  <source src="assets/video/profile-sample.mp4" type="video/mp4" />
+                  <source src="assets/video/about-video.mp4" type="video/mp4" />
                 </video>
-              </div>
-              <div style="position:relative; z-index:1; text-align:center; color:#fff;">
-                <strong style="display:block; color:#fff; font-size:1.1rem; margin-bottom:8px;">Profile
-                  Visual</strong>
-                <span>Image / Motion Portrait Placeholder</span>
               </div>
             </div>
             <div class="profile-body">
-              <strong>Your Name</strong><br />
-              <span style="color: var(--text-muted);">Designer · Instructor · Front-end Planning</span>
+              <strong>황혜민</strong><br>
+              <span style="color: var(--text-muted);">Web Designer · Front-end · Print Designer · Editorial
+                Designer</span>
             </div>
           </article>
 
           <article class="card about-body reveal reveal-right">
-            <h3>브랜드와 디지털 경험을 연결하는 디자이너</h3>
+            <h3>더 나은 경험을 만들기 위해 끊임없이 성장하는 디자이너</h3>
             <p>
-              시각디자인 기반의 브랜딩, 편집, 웹 기획 경험을 바탕으로,
-              설계부터 목업, UI 구조, 모션 방향까지 일관성 있는 결과물을 만드는 데 집중합니다.
+              브랜드를 이해하고 사용자의 경험을 고민하며, 기획부터 디자인까지 하나의 흐름으로 연결되는 <br>결과물을 만드는 데 집중합니다.
             </p>
 
             <div class="timeline">
               <div class="timeline-item">
-                <div class="timeline-year">2026</div>
+                <div class="timeline-year">2024.06 - 11</div>
                 <div class="timeline-role">
-                  <strong>Portfolio Renewal</strong>
-                  <span>브랜딩 중심 원페이지 포트폴리오 리빌드</span>
+                  <strong>프리랜서 인쇄물 디자인 보조 아르바이트</strong>
+                  <span>관공서 현수막 · 배너 · 포스터 · 카드뉴스 · 종이백 · 상장 디자인 </span>
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-year">2024–</div>
+                <div class="timeline-year">2025.03 - 06</div>
                 <div class="timeline-role">
-                  <strong>Digital / AI Workflow</strong>
-                  <span>AI 이미지·영상 활용한 실무형 비주얼 제작 프로세스 확장</span>
+                  <strong>현수막 · 배너 직무 근무 (계약직)</strong>
+                  <span>현수막 · 배너 디자인 / 지하철 사인물 보조 디자인</span>
                 </div>
               </div>
               <div class="timeline-item">
-                <div class="timeline-year">Career</div>
+                <div class="timeline-year">2026.04 - 08</div>
                 <div class="timeline-role">
-                  <strong>Branding / Design / Education</strong>
-                  <span>브랜드 기획, 시각디자인, 콘텐츠 제작, 웹 기획·프론트엔드 연계</span>
+                  <strong>부산 나래디자인 학원 수료</strong>
+                  <span>[산대특]UXUI웹, 영상 콘텐츠 디자인과정(부산문화관광 프로젝트 제작)</span>
                 </div>
               </div>
             </div>
@@ -110,28 +106,30 @@
               <section class="skill-group">
                 <h4>Design</h4>
                 <div class="skill-tags">
-                  <span class="tag">Figma</span>
-                  <span class="tag">Photoshop</span>
-                  <span class="tag">Illustrator</span>
-                  <span class="tag">InDesign</span>
+                  <span class="tag"><img src="./assets/img/illustrator.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/photoshop.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/indesign.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/aftereffects.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/premiere.png" alt=""></span>
+
                 </div>
               </section>
               <section class="skill-group">
                 <h4>Frontend</h4>
                 <div class="skill-tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">Responsive UI</span>
+                  <span class="tag"><img src="./assets/img/html_icon.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/css_icon.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/js_icon.png" alt=""></span>
+
                 </div>
               </section>
               <section class="skill-group">
                 <h4>AI Workflow</h4>
                 <div class="skill-tags">
-                  <span class="tag">GPT</span>
-                  <span class="tag">Firefly</span>
-                  <span class="tag">Midjourney</span>
-                  <span class="tag">ImageFX</span>
+                  <span class="tag"><img src="./assets/img/chatGPT.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/jem.png" alt=""></span>
+                  <span class="tag"><img src="./assets/img/googleflow.png" alt=""></span>
+
                 </div>
               </section>
             </div>
@@ -145,7 +143,7 @@
         <div class="section-head reveal reveal-scale">
           <div>
             <!-- <span class="eyebrow">브랜드별 한 줄 구성으로 세부 결과물을 미리 보기</span> -->
-            <h2>Branding Projects</h2>
+            <h2 style="font-family: 'YeogiOttaeJalnan';">Branding Projects</h2>
           </div>
           <!-- <p>
             각 브랜드마다 브랜드기획, 목업, 웹가이드, 웹사이트를 각각 별도 썸네일로 구성하고,
@@ -159,7 +157,7 @@
             <div class="brand-info brand1_color">
               <!-- 브랜드별 색상  brand1_color-->
 
-              <h3>Brand Project 01</h3>
+              <h3>몽글몽글해 펫펜션</h3>
               <p>
                 브랜드 컨셉, 비주얼 시스템, 웹 가이드와 웹사이트 결과물을 연결한 프로젝트.
               </p>
@@ -175,22 +173,19 @@
 
             <div>
               <div class="brand-slider-head">
-                <span class="brand-slider-title">Brand Planning · Mockup · Web Guide · Website · SNS · Campaign</span>
-                <div class="slider-controls">
+                <span class="brand-slider-title"><span>Brand Planning</span> <span>Mockup</span> <span>Web Guide</span>
+                  <span>Website</span> </span>
+                <!--<div class="slider-controls">
                   <button class="slider-btn" type="button" data-slider-prev="brandTrack01">←</button>
                   <button class="slider-btn" type="button" data-slider-next="brandTrack01">→</button>
-                </div>
+                </div>-->
               </div>
-               <div class="brand-track slider-track" id="brandTrack01">
+              <div class="brand-track slider-track" id="brandTrack01">
                 <article class="thumb-card brand-thumb">
-                  <a href="#" target="_blank">
+                  <a href="./brand_planning.html" target="_blank">
                     <video class="thumb-video" muted loop playsinline preload="metadata">
-                      <source src="assets/video/brand_thumbnail_video_sample.mp4" type="video/mp4" />
+                      <source src="assets/video/Brand Planning.mp4" type="video/mp4" />
                     </video>
-
-                    <!-- <a href="#" target="_blank">
-                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
-                  </a> -->
                     <div class="thumb-overlay">
                       <strong>Brand Planning</strong>
                       <p class="thumb-explanation">브랜드의 기획, 디자인 스타일 가이드를 확인하실 수 있습니다.</p>
@@ -198,15 +193,20 @@
                       <p class="skills-icon">
                         <img src="assets/img/photoshop.png" alt="icon">
                         <img src="assets/img/illustrator.png" alt="icon">
-                        <img src="assets/img/indesign.png" alt="icon">
+                        <img src="assets/img/figma.png" alt="icon">
                       </p>
                     </div>
+                  </a>
                 </article>
-                </a>
+
+
+
                 <article class="thumb-card brand-thumb">
-                  <!-- <video class="thumb-video" autoplay muted loop playsinline><source src="assets/brand-02-mockup.mp4" type="video/mp4" /></video> -->
-                  <a href="#" target="_blank">
-                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                  <a href="./mockup.html" target="_blank">
+                    <video class="thumb-video" autoplay muted loop playsinline>
+                      <source src="assets/video/Mockup.mp4" type="video/mp4" />
+                    </video>
+
                     <div class="thumb-overlay">
                       <strong>Mockup</strong>
                       <p class="thumb-explanation">브랜드의 제품 디자인을 확인하실 수 있습니다.</p>
@@ -214,15 +214,17 @@
                       <p class="skills-icon">
                         <img src="assets/img/photoshop.png" alt="icon">
                         <img src="assets/img/illustrator.png" alt="icon">
-                        <img src="assets/img/indesign.png" alt="icon">
                       </p>
                     </div>
                   </a>
+
                 </article>
 
                 <article class="thumb-card brand-thumb">
-                  <a href="#" target="_blank">
-                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                  <a href="./web_guide.html" target="_blank">
+                    <video class="thumb-video" autoplay muted loop playsinline>
+                      <source src="assets/video/Web Guide.mp4" type="video/mp4" />
+                    </video>
                     <div class="thumb-overlay">
                       <strong>Web Guide</strong>
                       <p class="thumb-explanation">브랜드 사이트의 설계, 시안 디자인을 확인하실 수 있습니다.</p>
@@ -238,22 +240,25 @@
 
                 <article class="thumb-card brand-thumb">
                   <!-- <video class="thumb-video" autoplay muted loop playsinline><source src="assets/brand-02-site.mp4" type="video/mp4" /></video> -->
-                  <a href="#" target="_blank">
-                    <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
+                  <a href="https://hwanghyemin66.github.io/monglehae/" target="_blank">
+                    <video class="thumb-video" autoplay muted loop playsinline>
+                      <source src="assets/video/Website.mp4" type="video/mp4" />
+                    </video>
                     <div class="thumb-overlay">
                       <strong>Website</strong>
                       <p class="thumb-explanation">브랜드 웹사이트를 확인하실 수 있습니다.</p>
                       <span>Live Result / Motion UI</span>
                       <p class="skills-icon">
                         <img src="assets/img/html_icon.png" alt="icon">
-                        <img src="assets/img/vs_code.png" alt="icon">
+                        <img src="assets/img/css_icon.png" alt="icon">
+                        <img src="assets/img/js_icon.png" alt="icon">
                       </p>
                     </div>
                     <div class="thumb-overlay"><strong></strong><span></span></div>
                   </a>
                 </article>
 
-                <article class="thumb-card brand-thumb">
+                <!--<article class="thumb-card brand-thumb">
                   <a href="#" target="_blank">
                     <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
                     <div class="thumb-overlay">
@@ -266,10 +271,10 @@
                       </p>
                     </div>
                   </a>
-                </article>
+                </article>-->
 
-                <article class="thumb-card brand-thumb">
-                  <!-- <video class="thumb-video" autoplay muted loop playsinline><source src="assets/brand-02-display.mp4" type="video/mp4" /></video> -->
+                <!-- <article class="thumb-card brand-thumb">
+                  <video class="thumb-video" autoplay muted loop playsinline><source src="assets/brand-02-display.mp4" type="video/mp4" /></video> 
                   <a href="#" target="_blank">
                     <img src="assets/img/brand_thumbnail_sample.jpg" alt="brand">
                     <div class="thumb-overlay">
@@ -282,7 +287,7 @@
                       </p>
                     </div>
                   </a>
-                </article>
+                </article>-->
               </div>
             </div>
           </section>
@@ -290,9 +295,9 @@
           <section class="card brand-row reveal reveal-scale">
             <div class="brand-info brand2_color">
               <!-- 브랜드별 색상  brand2_color-->
-              <h3>Brand Project 02</h3>
+              <h3>LUMEN CLINIC</h3>
               <p>
-                리뉴얼 중심의 브랜드 프로젝트로, 비주얼 아이덴티티와 디지털 확장 화면을 한 줄 슬라이드 구조로 보여줍니다.
+                설명글
               </p>
               <!-- <div class="brand-meta">
                 <span class="tag"><a href="#" target="_blank">Identity</a></span>
@@ -330,7 +335,7 @@
                       <p class="skills-icon">
                         <img src="assets/img/photoshop.png" alt="icon">
                         <img src="assets/img/illustrator.png" alt="icon">
-                        <img src="assets/img/indesign.png" alt="icon">
+                        <img src="assets/img/figma.png" alt="icon">
                       </p>
                     </div>
                 </article>
@@ -427,7 +432,7 @@
         <div class="section-head reveal reveal-scale">
           <div>
             <!-- <span class="eyebrow">포스터, 배너, 카드뉴스, 릴스·영상 작업을 구성/span> -->
-            <h2>Visual Content</h2>
+            <h2 style="font-family: 'YeogiOttaeJalnan';">Work</h2>
           </div>
           <!-- <p>
             정지형 비주얼 작업은 한 줄 안에서 함께 보여주고, 영상 작업은 별도 행으로 분리해 흐름이 자연스럽도록 정리했습니다.
@@ -438,8 +443,8 @@
           <section class="card work-row reveal reveal-scale">
             <div class="work-row-head">
               <div>
-                <h3>Posters · Banners · Card News</h3>
-                <p>포스터, 디지털 배너, 카드뉴스를 팝업을 통해 자세히 확인하실 수 있습니다.</p>
+                <h3>Print Design</h3>
+                <p>현수막, 배너, 포스터, 종이백, 상장, 발표자료집 표지 등 </p>
               </div>
               <div class="slider-controls">
                 <button class="slider-btn" type="button" data-slider-prev="visualTrack">←</button>
@@ -447,115 +452,87 @@
               </div>
             </div>
             <div class="thumb-track slider-track" id="visualTrack">
-              <!-- poster / banner / cardnews / reels 모달 전용 큰 이미지는 data-modal-media="assets/img/원하는파일.jpg" 로 직접 지정 -->
-              <!-- 카드별 모달 비율은 data-modal-ratio="가로 / 세로" 형식으로 지정: 예) 1200 / 628, 1 / 1, 9 / 16, 1080 / 1350 -->
-              <article class="poster-thumb thumb-card modal-card" data-modal-type="poster"
-                data-modal-label="Poster Project"
-                data-modal-title="Poster Series A"
-                data-modal-description="이벤트 홍보용 포스터 시리즈입니다. 타이포그래피와 무드 중심의 키비주얼 작업입니다." data-modal-role="Poster Design"
-                data-modal-tools="Photoshop, Illustrator"
-                data-modal-summary="전시/행사 성격의 키비주얼 포스터 시리즈입니다. 메인 타이포와 무드 중심 그래픽으로 메시지를 압축해 전달합니다."
-                data-modal-meta1-label="Format" data-modal-meta1-value="A2 Poster / Digital Adaptation"
-                data-modal-meta2-label="Client" data-modal-meta2-value="Brand Campaign" data-modal-meta3-label="Year"
-                data-modal-meta3-value="2026" data-modal-meta4-label="Concept"
-                data-modal-meta4-value="Bold Type / Minimal Mood" data-modal-tags="Typography, Campaign, Key Visual"
-                data-modal-note-title="Editable Note"
-                data-modal-note="이 영역은 포스터 전용 메모 박스입니다. 전시 개요, 인쇄 사양, 제작 포인트 등으로 자유롭게 수정하면 됩니다."
-                data-modal-video="Poster motion teaser area" data-modal-link="https://example.com"
-                data-modal-media="assets/img/poster_thumbnail_sample.jpg" data-modal-ratio="3 / 4">
-                <video class="thumb-video" muted loop playsinline preload="metadata">
-                  <source src="assets/video/poster.mp4" type="video/mp4" />
-                </video>
-                <div class="thumb-overlay"><strong>Poster Series A</strong><span>Campaign / Event Visual</span></div>
+
+              <article class="poster-thumb thumb-card">
+                <a href="./work_banner1.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/poster.mp4" type="video/mp4" />
+                  </video>
+
+                  <div class="thumb-overlay">
+                    <strong>현수막</strong>
+                    <span>2024.06 - 11</span>
+                  </div>
+                </a>
               </article>
 
-              <article class="poster-thumb thumb-card modal-card" data-modal-type="poster"
-                data-modal-label="Poster"
-                data-modal-title="Poster Series B" data-modal-description="브랜드 포스터 시리즈입니다."
-                data-modal-role="Poster Design" data-modal-tools="Photoshop"
-                data-modal-summary="브랜드 무드를 중심으로 전개한 포스터 시리즈입니다." data-modal-meta1-label="Format"
-                data-modal-meta1-value="B1 / SNS Poster" data-modal-meta2-label="Client"
-                data-modal-meta2-value="Brand Promotion" data-modal-meta3-label="Year" data-modal-meta3-value="2026"
-                data-modal-meta4-label="Concept" data-modal-meta4-value="Graphic Mood"
-                data-modal-tags="Poster, Branding" data-modal-note-title="Editable Note"
-                data-modal-note="포스터 프로젝트 설명을 여기서 직접 바꿀 수 있습니다." data-modal-video="Poster preview"
-                data-modal-link="https://example.com" data-modal-media="assets/img/poster_thumbnail_sample.jpg" data-modal-ratio="5 / 7">
-                <video class="thumb-video" muted loop playsinline preload="metadata">
-                  <source src="assets/video/poster.mp4" type="video/mp4" />
-                </video>
-                <div class="thumb-overlay"><strong>Poster Series B</strong><span>Brand / Promotion</span></div>
+              <article class="poster-thumb thumb-card">
+                <a href="./work_banner2.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/poster.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay">
+                    <strong>현수막</strong>
+                    <span>2025.03 - 06</span>
+                  </div>
+                </a>
               </article>
 
-              <article class="ad-thumb thumb-card modal-card" data-modal-type="banner" data-modal-label="Banner Project" data-modal-title="Banner Set A"
-                data-modal-description="디지털 배너 광고 세트입니다." data-modal-role="Banner Design"
-                data-modal-tools="Photoshop, Figma" data-modal-summary="퍼포먼스 배너와 SNS용 변형 소재를 함께 설계한 배너 세트입니다."
-                data-modal-meta1-label="Platform" data-modal-meta1-value="Meta / Web / App"
-                data-modal-meta2-label="Campaign" data-modal-meta2-value="Seasonal Promotion"
-                data-modal-meta3-label="Size" data-modal-meta3-value="1080x1080 / 1200x628"
-                data-modal-meta4-label="Placement" data-modal-meta4-value="Feed / Display / Landing"
-                data-modal-tags="Banner, Performance, SNS" data-modal-note-title="Editable Note"
-                data-modal-note="배너는 플랫폼, 사이즈, CTA 방향 등을 이 박스에서 자유롭게 수정하면 됩니다." data-modal-video="Banner motion preview"
-                data-modal-link="https://example.com" data-modal-media="assets/img/banner_sample.jpeg" data-modal-ratio="1200 / 628">
-                <video class="thumb-video" muted loop playsinline preload="metadata">
-                  <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
-                </video>
-                <div class="thumb-overlay"><strong>Banner Set A</strong><span>Digital Ad System</span></div>
+              <article class="ad-thumb thumb-card">
+                <a href="./work_banner3.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>배너</strong></div>
+                </a>
               </article>
 
-              <article class="ad-thumb thumb-card modal-card" data-modal-type="banner" data-modal-label="Banner" data-modal-title="Banner Set B"
-                data-modal-description="프로모션 웹 배너 세트입니다." data-modal-role="Banner Design" data-modal-tools="Photoshop"
-                data-modal-summary="웹 프로모션 메인/서브 배너 세트입니다." data-modal-meta1-label="Platform"
-                data-modal-meta1-value="Website" data-modal-meta2-label="Campaign" data-modal-meta2-value="Promotion"
-                data-modal-meta3-label="Size" data-modal-meta3-value="PC / Mobile Responsive"
-                data-modal-meta4-label="Placement" data-modal-meta4-value="Hero / Mid Banner"
-                data-modal-tags="Banner, Web" data-modal-note-title="Editable Note"
-                data-modal-note="배너 프로젝트 설명을 이 텍스트로 바꾸면 됩니다." data-modal-video="Banner motion preview"
-                data-modal-link="https://example.com" data-modal-media="assets/img/banner_sample.jpeg">
-                <video class="thumb-video" muted loop playsinline preload="metadata">
-                  <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
-                </video>
-                <div class="thumb-overlay"><strong>Banner Set B</strong><span>Web Promotion</span></div>
+              <article class="ad-thumb thumb-card modal-card">
+                <a href="./work_poster.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>포스터</strong></div>
+                </a>
               </article>
 
-              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
-                data-modal-label="Card News Project"
-                data-modal-title="Card News Series A"
-                data-modal-description="브랜드 메시지를 카드뉴스 형식으로 재구성한 시리즈입니다. 모달에서 여러 장의 카드뉴스를 순서대로 확인할 수 있습니다."
-                data-modal-role="Card News Design" data-modal-tools="Photoshop, Illustrator"
-                data-modal-summary="인스타그램 캐러셀 형식의 카드뉴스입니다. 첫 장에서 주제를 제시하고 뒤로 갈수록 정보 흐름이 이어지도록 구성했습니다."
-                data-modal-meta1-label="Topic" data-modal-meta1-value="Brand Story" data-modal-meta2-label="Pages"
-                data-modal-meta2-value="7 Pages" data-modal-meta3-label="Flow"
-                data-modal-meta3-value="Cover → Info → CTA" data-modal-meta4-label="Style"
-                data-modal-meta4-value="Editorial Carousel" data-modal-tags="Card News, Carousel, Storytelling"
-                data-modal-note-title="Editable Note"
-                data-modal-note="카드뉴스는 페이지 흐름, 표지 방향, 정보 구성 방식 등을 이 박스에서 자유롭게 수정할 수 있습니다."
-                data-modal-video="Card news preview" data-modal-link="https://example.com"
-                data-modal-images="assets/img/CardNews1.png|assets/img/CardNews2.png|assets/img/CardNews3.png|assets/img/CardNews4.png|assets/img/CardNews5.png|assets/img/CardNews6.png|assets/img/CardNews7.png" data-modal-ratio="4 / 5">
-                <div class="thumb-image">
-                  <img src="assets/img/CardNews1.png" alt="card news">
-                </div>
-                <div class="thumb-overlay"><strong>Card News Series A</strong><span>Brand Story / Slide Deck</span>
-                </div>
+              <article class="ad-thumb thumb-card modal-card">
+                <a href="./work_package.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>종이백</strong></div>
+                </a>
               </article>
 
-              <article class="cardnews-thumb thumb-card modal-card" data-modal-type="cardnews"
-                data-modal-label="Card News"
-                data-modal-title="Card News Series B" data-modal-description="프로모션 콘텐츠를 정보형 카드뉴스로 정리한 작업입니다."
-                data-modal-role="Card News Design" data-modal-tools="Photoshop, Figma"
-                data-modal-summary="정보 전달 중심의 프로모션 카드뉴스입니다." data-modal-meta1-label="Topic"
-                data-modal-meta1-value="Promotion" data-modal-meta2-label="Pages" data-modal-meta2-value="7 Pages"
-                data-modal-meta3-label="Flow" data-modal-meta3-value="Intro → Detail → CTA"
-                data-modal-meta4-label="Style" data-modal-meta4-value="Clean Info Layout"
-                data-modal-tags="Promotion, Information" data-modal-note-title="Editable Note"
-                data-modal-note="카드뉴스 프로젝트용 자유 메모 영역입니다." data-modal-video="Card news preview"
-                data-modal-link="https://example.com"
-                data-modal-images="assets/img/CardNews1.png|assets/img/CardNews2.png|assets/img/CardNews3.png|assets/img/CardNews4.png|assets/img/CardNews5.png|assets/img/CardNews6.png|assets/img/CardNews7.png">
-                <div class="thumb-image">
-                  <img src="assets/img/CardNews1.png" alt="card news">
-                </div>
-                <div class="thumb-overlay"><strong>Card News Series B</strong><span>Promotion / Information</span></div>
+               <article class="ad-thumb thumb-card modal-card">
+                <a href="./work_package.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>상장</strong></div>
+                </a>
               </article>
 
+               <article class="ad-thumb thumb-card modal-card">
+                <a href="./work_package.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>발표자료집</strong></div>
+                </a>
+              </article>
+
+               <article class="ad-thumb thumb-card modal-card">
+                <a href="./work_package.html" target="_blank">
+                  <video class="thumb-video" muted loop playsinline preload="metadata">
+                    <source src="assets/video/ad_sample_01.mp4" type="video/mp4" />
+                  </video>
+                  <div class="thumb-overlay"><strong>전시 리플렛 · 팜플렛</strong></div>
+                </a>
+              </article>
+
+              
 
 
 
@@ -578,15 +555,13 @@
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
                 data-modal-title="Reel Project A"
                 data-modal-description="숏폼 중심의 브랜드 릴스 프로젝트입니다. 모션 리듬과 메시지 전달을 고려해 구성했습니다."
-                data-modal-role="Motion Design / Reel Editing"
-                data-modal-tools="Premiere Pro, After Effects"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="15 sec"
-                data-modal-tags="Reels, Short-form, Motion"
+                data-modal-role="Motion Design / Reel Editing" data-modal-tools="Premiere Pro, After Effects"
+                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration"
+                data-modal-meta2-value="15 sec" data-modal-tags="Reels, Short-form, Motion"
                 data-modal-note-title="Editable Note"
                 data-modal-note="릴스 전용 모달 템플릿입니다. 영상 콘셉트, 후킹 포인트, 자막 구성 등을 자유롭게 수정하세요."
-                data-modal-link="https://example.com"
-                data-modal-media="assets/video/Reels_sample_01.mp4" data-modal-ratio="9 / 16">
+                data-modal-link="https://example.com" data-modal-media="assets/video/Reels_sample_01.mp4"
+                data-modal-ratio="9 / 16">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
                 </video>
@@ -600,16 +575,11 @@
               </article>
 
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Reel Project B"
-                data-modal-description="캠페인 메시지를 짧은 영상으로 압축한 릴스 작업입니다."
-                data-modal-role="Campaign Motion"
-                data-modal-tools="Premiere Pro"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="12 sec"
-                data-modal-tags="Campaign, Reels"
-                data-modal-note-title="Editable Note"
-                data-modal-note="릴스 B 설명을 이 영역에서 직접 수정할 수 있습니다."
-                data-modal-link="https://example.com"
+                data-modal-title="Reel Project B" data-modal-description="캠페인 메시지를 짧은 영상으로 압축한 릴스 작업입니다."
+                data-modal-role="Campaign Motion" data-modal-tools="Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="12 sec"
+                data-modal-tags="Campaign, Reels" data-modal-note-title="Editable Note"
+                data-modal-note="릴스 B 설명을 이 영역에서 직접 수정할 수 있습니다." data-modal-link="https://example.com"
                 data-modal-media="assets/video/Reels_sample_01.mp4">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
@@ -624,16 +594,11 @@
               </article>
 
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Reel Project C"
-                data-modal-description="브랜드 무드를 강조한 숏폼 영상입니다."
-                data-modal-role="Brand Motion"
-                data-modal-tools="Premiere Pro"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="10 sec"
-                data-modal-tags="Brand Reel, Motion"
-                data-modal-note-title="Editable Note"
-                data-modal-note="브랜드 릴스 C에 대한 메모를 자유롭게 기입하세요."
-                data-modal-link="https://example.com"
+                data-modal-title="Reel Project C" data-modal-description="브랜드 무드를 강조한 숏폼 영상입니다."
+                data-modal-role="Brand Motion" data-modal-tools="Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="10 sec"
+                data-modal-tags="Brand Reel, Motion" data-modal-note-title="Editable Note"
+                data-modal-note="브랜드 릴스 C에 대한 메모를 자유롭게 기입하세요." data-modal-link="https://example.com"
                 data-modal-media="assets/video/Reels_sample_01.mp4">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
@@ -648,16 +613,11 @@
               </article>
 
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Reel Project D"
-                data-modal-description="광고성 메시지를 중심으로 한 모션 릴스입니다."
-                data-modal-role="Ad Motion"
-                data-modal-tools="Premiere Pro"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="20 sec"
-                data-modal-tags="Ad Motion, Short-form"
-                data-modal-note-title="Editable Note"
-                data-modal-note="광고 릴스 D 설명을 수정하세요."
-                data-modal-link="https://example.com"
+                data-modal-title="Reel Project D" data-modal-description="광고성 메시지를 중심으로 한 모션 릴스입니다."
+                data-modal-role="Ad Motion" data-modal-tools="Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="20 sec"
+                data-modal-tags="Ad Motion, Short-form" data-modal-note-title="Editable Note"
+                data-modal-note="광고 릴스 D 설명을 수정하세요." data-modal-link="https://example.com"
                 data-modal-media="assets/video/Reels_sample_01.mp4">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
@@ -672,16 +632,11 @@
               </article>
 
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Reel Project E"
-                data-modal-description="브랜드 인트로 성격의 영상 작업입니다."
-                data-modal-role="Intro Motion"
-                data-modal-tools="Premiere Pro"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="08 sec"
-                data-modal-tags="Intro, Reels"
-                data-modal-note-title="Editable Note"
-                data-modal-note="인트로 릴스 E에 대한 설명입니다."
-                data-modal-link="https://example.com"
+                data-modal-title="Reel Project E" data-modal-description="브랜드 인트로 성격의 영상 작업입니다."
+                data-modal-role="Intro Motion" data-modal-tools="Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="08 sec"
+                data-modal-tags="Intro, Reels" data-modal-note-title="Editable Note"
+                data-modal-note="인트로 릴스 E에 대한 설명입니다." data-modal-link="https://example.com"
                 data-modal-media="assets/video/Reels_sample_01.mp4">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
@@ -696,16 +651,11 @@
               </article>
 
               <article class="reels-thumb thumb-card modal-card" data-modal-type="reels"
-                data-modal-title="Reel Project F"
-                data-modal-description="브랜드 인트로 영상 확장 버전입니다."
-                data-modal-role="Motion Design"
-                data-modal-tools="Premiere Pro"
-                data-modal-meta1-label="Format" data-modal-meta1-value="9:16 Vertical"
-                data-modal-meta2-label="Duration" data-modal-meta2-value="18 sec"
-                data-modal-tags="Brand Intro, Reel"
-                data-modal-note-title="Editable Note"
-                data-modal-note="릴스 F 전용 설명 영역입니다."
-                data-modal-link="https://example.com"
+                data-modal-title="Reel Project F" data-modal-description="브랜드 인트로 영상 확장 버전입니다."
+                data-modal-role="Motion Design" data-modal-tools="Premiere Pro" data-modal-meta1-label="Format"
+                data-modal-meta1-value="9:16 Vertical" data-modal-meta2-label="Duration" data-modal-meta2-value="18 sec"
+                data-modal-tags="Brand Intro, Reel" data-modal-note-title="Editable Note"
+                data-modal-note="릴스 F 전용 설명 영역입니다." data-modal-link="https://example.com"
                 data-modal-media="assets/video/Reels_sample_01.mp4">
                 <video class="thumb-video" muted loop playsinline preload="metadata">
                   <source src="assets/video/Reels_sample_01.mp4" type="video/mp4" />
@@ -742,11 +692,13 @@
 
   <footer class="site-footer" id="contact">
     <div class="footer-grid">
-      <div><strong>Your Name</strong><span>Designer Portfolio</span></div>
-      <div><strong>Email</strong><a href="mailto:hello@example.com">hello@example.com</a></div>
-      <div><strong>Contact</strong><span>X / Instagram / Facebook</span></div>
-      <div><strong>Copyright</strong><span>© 2026 Your Name. All rights reserved.</span></div>
+      <div><strong>Hwang Hyemin</strong><span>Designer Portfolio</span></div>
+      <div><strong>E-mail</strong><a href="mailto:hello@example.com">hyeminh206@gmail.com</a></div>
+      <div><strong>Contact</strong><span>010-9250-4054</span></div>
+      <div><strong>Copyright</strong><span>© 2026 Hwang Hyemin. All rights reserved.</span></div>
     </div>
+
+    <video src="./assets/video/footer.mp4" muted loop autoplay></video>
   </footer>
 
 
