@@ -1124,7 +1124,7 @@ padding: 28px;
 
 .works-stack {
   display: grid;
-  gap: 120px;
+  gap: 80px;
 }
 
 .work-row {
