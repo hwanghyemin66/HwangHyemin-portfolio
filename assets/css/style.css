@@ -1146,11 +1146,26 @@ padding: 28px;
 }
 
 .site-footer {
-  padding: 60px 0 120px;
+  padding: 150px 0 60px;
   color: var(--text-muted);
   background: #E6FBFE;
   backdrop-filter: blur(14px);
+overflow: hidden;
+  position: relative;
 }
+
+/*푸터영상*/
+.site-footer video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+width: 100%;
+  z-index: -1;
+  height: 130%;
+  object-fit: cover;
+  object-position: 30% bottom;
+}
+
 
 .footer-grid {
   width: var(--container);
@@ -1166,6 +1181,8 @@ padding: 28px;
   display: block;
   margin-bottom: 6px;
 }
+
+
 
 .reveal {
   opacity: 0;
@@ -1971,19 +1988,4 @@ template {
 
 html {
   scroll-behavior: smooth;
-}
-
-
-/*푸터영상*/
-.site-footer {
-  position: relative;
-}
-
-.site-footer video {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: -1;
-  object-fit: cover;
 }
